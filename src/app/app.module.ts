@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+
+import { GameOfLife } from './models/gameoflife';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -10,7 +13,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [GameOfLife],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
