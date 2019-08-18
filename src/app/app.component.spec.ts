@@ -11,6 +11,14 @@ describe('Game of life', () => {
       const resul = game.celulaViva(x,y);
       expect(resul).toEqual(true);
     });
+
+    it('Esta muerto posicion 1,1', () => {
+      const x = 1;
+      const y = 1;
+
+      const resul = game.celulaMuerta(x,y);
+      expect(resul).toEqual(true);
+    });
 });
 
 
