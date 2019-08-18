@@ -12,5 +12,6 @@ export class AppComponent {
   constructor(boxes: GameOfLife) {
     this.boxarray = boxes.DevolverArray();
     console.log(this.boxarray);
+
   }
 }

@@ -1,7 +1,20 @@
 import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { GameOfLife } from './models/gameoflife';
 
-describe('AppComponent', () => {
+
+describe('Game of life', () => {
+  const game = new GameOfLife();
+    it('Esta vivo posicion 1,2', () => {
+      const x = 1;
+      const y = 2;
+
+      const resul = game.celulaViva(x,y);
+      expect(resul).toEqual(true);
+    });
+});
+
+
+/*describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
@@ -28,4 +41,5 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to gameoflife!');
   });
-});
+});*/
+
