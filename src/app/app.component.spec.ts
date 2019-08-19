@@ -67,6 +67,8 @@ describe('Game of life', () => {
 });
 
 
+
+
 /*describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({

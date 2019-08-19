@@ -7,4 +7,3 @@ Practica TDD  Game Of Life
 Run `npm install` 
 
 Run `ng test`  ejecuta test via [Karma].
-
